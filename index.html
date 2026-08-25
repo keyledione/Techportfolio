@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyle Dione · DataScientist Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100;14..32,200;14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome 6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ============================================================
+         BACKGROUND LAYERS — Premium Studio Aesthetic
+         ============================================================ -->
+    <!-- Base layer -->
+    <div id="bg-base" aria-hidden="true"></div>
+
+    <!-- Gradient orbs — Warm, visible colors -->
+    <div id="bg-orbs" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="orb orb-4"></div>
+      <div class="orb orb-5"></div>
+    </div>
+
+    <!-- Subtle texture overlay — Premium paper/studio feel -->
+    <div id="bg-texture" aria-hidden="true"></div>
+
+    <!-- Clean grid — Architectural, minimalist -->
+    <div id="bg-grid" aria-hidden="true"></div>
+
+    <!-- Elegant wave lines — Adds subtle motion -->
+    <canvas id="bg-waves" aria-hidden="true"></canvas>
+
+    <!-- Soft vignette — Focus on content -->
+    <div id="bg-vignette" aria-hidden="true"></div>
+
+    <!-- Gentle noise — Premium texture -->
+    <div id="bg-noise" aria-hidden="true"></div>
+
+    <!-- ============================================================
+         PROGRESS BAR
+         ============================================================ -->
+    <div
+      id="progress-bar"
+      role="progressbar"
+      aria-label="Scroll progress"
+    ></div>
+
+    <!-- ============================================================
+         CURSOR GLOW
+         ============================================================ -->
+    <div id="cursor-glow" aria-hidden="true"></div>
+
+    <!-- ============================================================
+         NAVIGATION
+         ============================================================ -->
+    <nav
+      class="glass-nav"
+      id="mainNav"
+      role="navigation"
+      aria-label="Main navigation"
+    >
+      <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+        <div class="text-2xl font-extrabold tracking-tight reveal-item">
+          <span class="theme-red">Keyle</span>
+          <span class="text-white/40 font-light">·</span>
+          <span class="text-white/60 font-light">Dione</span>
+        </div>
+
+        <ul
+          class="hidden md:flex items-center gap-8 text-sm font-medium text-white/70"
+        >
+          <li>
+            <a href="#hero" class="hover:text-white transition-colors active"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#about" class="hover:text-white transition-colors"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="hover:text-white transition-colors"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="hover:text-white transition-colors"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#showcase" class="hover:text-white transition-colors"
+              >Showcase</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="magnetic-btn text-sm py-2 px-6">
+              <span class="relative z-10">Let's Work Together</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="flex items-center gap-4">
+          <!-- Theme Toggle -->
+          <button
+            id="themeToggle"
+            class="theme-toggle"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+
+          <button
+            id="mobileToggle"
+            class="md:hidden text-white/70 hover:text-white transition-colors text-2xl"
+            aria-label="Toggle menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-7 h-7"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ============================================================
+     HERO
+     ============================================================ -->
+    <section class="hero-section" id="hero">
+      <div class="relative z-10 max-w-6xl mx-auto px-6 text-center">
+        <div class="reveal-item mb-4">
+          <span
+            class="inline-block px-4 py-1.5 text-xs font-semibold tracking-widest uppercase border border-red-500/20 rounded-full text-red-400 bg-black/40 backdrop-blur-sm"
+          >
+            <span class="text-red-500">◆</span> Tech Professional · Developer ·
+            Data Scientist
+          </span>
+        </div>
+
+        <h1
+          class="reveal-item breathing-text text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold leading-[1.05] tracking-tight max-w-5xl mx-auto"
+        >
+          Hi, I'm<br /><span>Keyle Dione</span>
+        </h1>
+
+        <p
+          class="reveal-item mt-6 text-lg md:text-xl text-white/60 max-w-2xl mx-auto font-light leading-relaxed"
+        >
+          Building Solutions Across Hardware, Software &amp; Data.
+        </p>
+        <p
+          class="reveal-item mt-2 text-base text-white/40 max-w-2xl mx-auto font-light"
+        >
+          Passionate about technology, data science, web development, graphic
+          design, and building practical digital solutions.
+        </p>
+
+        <div
+          class="reveal-item mt-10 flex flex-wrap items-center justify-center gap-4"
+        >
+          <a href="#projects" class="magnetic-btn">
+            <span class="relative z-10">View My Work</span>
+          </a>
+          <a href="#contact" class="magnetic-btn btn-outline">
+            <span class="relative z-10">Let's Connect</span>
+          </a>
+        </div>
+
+        <div
+          class="reveal-item mt-16 text-white/20 text-sm tracking-widest uppercase animate-bounce"
+        >
+          <span class="block">Scroll</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5 mx-auto mt-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     ABOUT
+     ============================================================ -->
+    <section id="about" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div class="scroll-reveal">
+            <span
+              class="theme-red font-semibold text-sm tracking-widest uppercase"
+              >◆ About Me</span
+            >
+            <h2 class="text-4xl md:text-5xl font-bold mt-3 leading-tight">
+              Passionate About<br />
+              <span class="theme-red">Technology &amp; Innovation</span>
+            </h2>
+            <p class="text-white/50 text-lg mt-6 leading-relaxed">
+              I'm Keyle Dione, a versatile tech professional passionate about
+              hardware, software, and everything in between. From building
+              websites and designing graphics to analyzing data and working with
+              systems, I bring a holistic approach to technology.
+            </p>
+            <p class="text-white/40 text-base mt-4 leading-relaxed">
+              I'm passionate about web development, data science, graphic
+              design, hardware, software, and building practical tech solutions
+              that make a difference.
+            </p>
+            <div class="grid grid-cols-2 gap-4 mt-8">
+              <div class="stat-item">
+                <div class="num" data-count="12">0</div>
+                <span>Projects Built</span>
+              </div>
+              <div class="stat-item">
+                <div class="num" data-count="18">0</div>
+                <span>Technologies</span>
+              </div>
+              <div class="stat-item">
+                <div class="num" data-count="5">0</div>
+                <span>Expertise Areas</span>
+              </div>
+              <div class="stat-item">
+                <div class="num" data-count="∞">0</div>
+                <span>Continuous Learning</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-placeholder scroll-reveal">
+            <img src="images/profile/keyle.jpg" alt="Keyle Dione" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS
+         ============================================================ -->
+    <section id="skills" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center scroll-reveal">
+          <span
+            class="theme-red font-semibold text-sm tracking-widest uppercase"
+            >◆ Skills</span
+          >
+          <h2 class="text-4xl md:text-5xl font-bold mt-3">
+            Technologies I Work With
+          </h2>
+          <p class="text-white/50 text-lg mt-4 max-w-2xl mx-auto">
+            Hover over any skill to see more details. Click filters to explore
+            categories.
+          </p>
+        </div>
+
+        <div class="skill-filters mt-10" id="skillFilters">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="programming">Programming</button>
+          <button data-filter="web">Web Development</button>
+          <button data-filter="data">Data Science</button>
+          <button data-filter="design">Graphic Design</button>
+          <button data-filter="hardware">Hardware &amp; Systems</button>
+          <button data-filter="tools">Tools</button>
+        </div>
+        <div class="skills-grid mt-8" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJECTS
+         ============================================================ -->
+    <section id="projects" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center scroll-reveal">
+          <span
+            class="theme-red font-semibold text-sm tracking-widest uppercase"
+            >◆ Projects</span
+          >
+          <h2 class="text-4xl md:text-5xl font-bold mt-3">What I've Built</h2>
+          <p class="text-white/50 text-lg mt-4 max-w-2xl mx-auto">
+            Each project demonstrates my ability to create practical, polished
+            solutions.
+          </p>
+        </div>
+
+        <div class="project-filters mt-10" id="projectFilters">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="web">Web Development</button>
+          <button data-filter="js">JavaScript</button>
+          <button data-filter="data">Data</button>
+          <button data-filter="systems">Systems</button>
+        </div>
+
+        <div class="projects-grid mt-8" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     CONTACT
+     ============================================================ -->
+    <section id="contact" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div class="scroll-reveal">
+            <span
+              class="theme-red font-semibold text-sm tracking-widest uppercase"
+              >◆ Contact</span
+            >
+            <h2 class="text-4xl md:text-5xl font-bold mt-3 leading-tight">
+              Let's<br />
+              <span class="theme-red">Connect</span>
+            </h2>
+            <p class="text-white/50 text-lg mt-6 leading-relaxed">
+              Have a project or idea? Reach out — I'm always open to
+              collaboration.
+            </p>
+
+            <!-- Contact Details -->
+            <div class="mt-8 space-y-4">
+              <div class="flex items-center gap-4 text-white/70">
+                <i class="fas fa-phone text-red-500 w-6"></i>
+                <span>+254 110 675 122</span>
+              </div>
+              <div class="flex items-center gap-4 text-white/70">
+                <i class="fas fa-envelope text-red-500 w-6"></i>
+                <span>keyledione3@gmail.com</span>
+              </div>
+              <div class="flex items-center gap-4 text-white/70">
+                <i class="fas fa-globe text-red-500 w-6"></i>
+                <a
+                  href="https://intra-creative-studios.vercel.app/"
+                  target="_blank"
+                  class="hover:text-red-500 transition-colors"
+                >
+                  intra-creative-studios.vercel.app
+                </a>
+              </div>
+            </div>
+
+            <!-- Social Links (removed LinkedIn) -->
+            <div class="social-links mt-8">
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="mailto:keyledione3@gmail.com" aria-label="Email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+              <a
+                href="https://intra-creative-studios.vercel.app/"
+                target="_blank"
+                aria-label="Website"
+                ><i class="fas fa-globe"></i
+              ></a>
+            </div>
+          </div>
+
+          <form id="contactForm" class="scroll-reveal" novalidate>
+            <div class="form-group">
+              <label for="cname">Name</label>
+              <input type="text" id="cname" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="cemail">Email</label>
+              <input
+                type="email"
+                id="cemail"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="csubject">Subject</label>
+              <input type="text" id="csubject" placeholder="Subject" />
+            </div>
+            <div class="form-group">
+              <label for="cmessage">Message</label>
+              <textarea
+                id="cmessage"
+                rows="4"
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
+            </div>
+            <div id="formFeedback" class="form-feedback"></div>
+            <button type="submit" class="magnetic-btn w-full">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+    <footer class="footer-section py-16 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-6"
+        >
+          <div class="text-center md:text-left">
+            <div class="text-2xl font-extrabold tracking-tight">
+              <span class="theme-red">Keyle</span>
+              <span class="text-white/40 font-light">·</span>
+              <span class="text-white/60 font-light">Dione</span>
+            </div>
+            <div class="typing-wrapper mt-2" id="typingWrapper">
+              <span id="typingText"></span>
+              <span class="typing-cursor"></span>
+            </div>
+          </div>
+
+          <div class="flex gap-8 text-sm text-white/50">
+            <a
+              href="https://github.com/"
+              target="_blank"
+              class="hover:text-red-500 transition-colors"
+              >GitHub</a
+            >
+            <a
+              href="mailto:keyledione3@gmail.com"
+              class="hover:text-red-500 transition-colors"
+              >Email</a
+            >
+            <a
+              href="https://intra-creative-studios.vercel.app/"
+              target="_blank"
+              class="hover:text-red-500 transition-colors"
+              >Website</a
+            >
+            <a href="#contact" class="hover:text-red-500 transition-colors"
+              >Contact</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between text-xs text-white/30"
+        >
+          <span>© 2026 Keyle Dione. All rights reserved.</span>
+          <span class="mt-2 md:mt-0">◆ Built with code &amp; creativity</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================================
+         SCROLL TO TOP
+         ============================================================ -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+    </button>
+
+    <!-- Main JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
