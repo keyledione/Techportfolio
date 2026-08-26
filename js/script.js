@@ -38,7 +38,7 @@ const skillsData = [
 
   // Graphic Design
   { name: "Adobe Photoshop", cat: "design", icon: "fab fa-adobe" },
-  { name: "Adobe Illustrator", cat: "design", icon: "fab fa-adobe" },
+  { name: "Photopea", cat: "design", icon: "fab fa-adobe" },
   { name: "Figma", cat: "design", icon: "fab fa-figma" },
   { name: "Canva", cat: "design", icon: "fas fa-paint-brush" },
 
@@ -605,7 +605,7 @@ class FormValidation {
       }
 
       this.feedback.style.color = "#22c55e";
-      this.feedback.textContent = "✅ Message sent successfully! (demo)";
+      this.feedback.textContent = "✅ Message sent successfully!";
 
       const submitBtn = this.form.querySelector(".magnetic-btn");
       submitBtn.textContent = "✓ Sent!";
